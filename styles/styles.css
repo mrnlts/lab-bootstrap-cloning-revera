@@ -39,7 +39,6 @@ body {
 
 .cover {
     background-image: url(/img/cat-wallpaper-5120x2160-3296_16.jpg);
-    background-size: 150%;
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -104,10 +103,6 @@ body {
     font-size: 0.9rem;
 }
 
-.projects {
-    margin: 2rem 18%;
-}
-
 .projects__title {
     padding-left: 18%;
 }
@@ -137,12 +132,12 @@ hr {
     justify-content: center;
 }
 
-.block--15 {
-    width: 15vw;
+.block--16 {
+    width: 16vw;
 }
 
 .article__image {
-    width: 98%;
+    width: 90%;
     margin: 0;
     padding-bottom: 1.5rem;
 }
@@ -157,7 +152,7 @@ hr {
     width: 85%;
     font-weight: bold;
     font-size: 1rem;
-    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .article__text--gray {
@@ -196,18 +191,19 @@ hr {
 }
 
 .footer__container__title {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 .footer__container__content {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 85%;
     line-height: 1.5rem;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .footer__container__content li {
-    border-bottom: 1px solid lightgray 0.8;
+    /* border-bottom: 1px solid lightgray 0.8; */
+    border-bottom: 0.2px dotted lightgrey;
 }
 
 .footer__bottom--dark {
