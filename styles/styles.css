@@ -8,13 +8,15 @@ body {
 #header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
-    padding: 6rem 20% 2rem;
+    padding: 5.8rem 36.5% 2rem 26%;
 }
 
 .header__title {
     font-weight: bold;
     font-size: 2rem;
+    text-align: left;
 }
 
 .nav {
@@ -23,22 +25,24 @@ body {
 }
 
 .innerpage {
-    padding-right: 1.5rem;
+    padding-right: 1rem;
     text-decoration: none;
     color: gray;
     font-size: 0.9rem;
 }
 
 #header .red {
-    color: red;
+    color: #ed564b;
 }
 
 #main {
+    padding: 0;
+    margin: 0;
     border-bottom: 4px solid #ed564b;
 }
 
 .cover {
-    background-image: url(/img/cat-wallpaper-5120x2160-3296_16.jpg);
+    background: url(/img/cat-wallpaper-5120x2160-3296_16.jpg);
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -47,60 +51,81 @@ body {
     align-items: center;
     text-align: center;
 }
+/* 
+.overlap {
+    background: url(/img/overlay.png);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+} */
 
 .cover__title {
     color: white;
-    width: 50%;
-    font-size: 2.5rem;
-    padding-top: 14rem;
+    width: 35%;
+    font-size: 2.25rem;
+    padding-top: 14.8rem;
+    line-height: 2.45rem;
 }
 
 .cover__subtitle {
     color: white;
-    width: 45%;
-    font-size: 1rem;
+    width: 33%;
+    font-size: 1rem;    
     line-height: 1.5rem;
-    padding: 1.5rem;
+    padding: 0.7rem;
 }
 
 .cover__btn {
     background-color: transparent;
     color: white;
+    font-weight: bold;
     box-shadow: none;
     border: 1px solid white;
-    padding: 0.7rem 2.5rem;
-    margin-bottom: 2.5rem;
+    padding: 0.6rem 2rem;
+    margin-bottom: 5rem;
 }
 
 .container--red {
     background-color: #ed564b;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2.8rem 18%;
+    border-top: 5px solid #f96b61;
+    border-bottom: 5px solid #f96b61;
+}
+
+.container__card:nth-child(2) {
+    padding: 0 2.1rem;
 }
 
 .container__card {
     text-align: center;
-    width: 30%;
-    line-height: 1.5rem;
+    width: 23.5%;
+    line-height: 1.4rem;
 }
 
 .fas {
     border: 5px solid white;
     padding: 1.3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 50%;
 }
 
 .container__card__title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .container__card__text {
     font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.projects {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .projects__title {
@@ -133,11 +158,11 @@ hr {
 }
 
 .block--16 {
-    width: 16vw;
+    width: 16rem;
 }
 
 .article__image {
-    width: 90%;
+    width: 100%;
     margin: 0;
     padding-bottom: 1.5rem;
 }
