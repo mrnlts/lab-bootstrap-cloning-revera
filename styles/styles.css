@@ -65,6 +65,12 @@ body {
     color: #f4473a;
 }
 
+.carousel {
+    max-height: 550px;
+    position: relative;
+    margin: 0;
+}
+
 .carousel-control-prev-icon {
     left: 0px;
     z-index: 110;
@@ -83,22 +89,30 @@ body {
     left: 0px;
     top: 0px;
 }
-/* 
-.cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-/* 
-.cover__text {
-    position: relative;
-    z-index: 100;
-} */
 
-.cover__title {
-    color: white;
+.carousel-inner {
+    height: 550px;
+}
+
+.cover__text {
+    width: 800px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -400px;
+    text-align: center;
+    z-index: 120;
+    color: #fff;
+}
+
+.cover__text h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* .cover__title {
+    color: yellow;
     width: 35%;
     font-size: 2.25rem;
     padding-top: 14.8rem;
@@ -106,14 +120,14 @@ body {
 }
 
 .cover__subtitle {
-    color: white;
+    color: yellow;
     width: 33%;
     font-size: 1rem;    
     line-height: 1.5rem;
     padding: 0.7rem;
-}
+} */
 
-.cover__btn {
+/* .cover__btn {
     background-color: transparent;
     color: white;
     font-weight: bold;
@@ -122,7 +136,7 @@ body {
     padding: 0.6rem 2rem;
     margin-bottom: 5rem;
 }
-
+ */
 .container--red {
     background-color: #ed564b;
     color: white;
