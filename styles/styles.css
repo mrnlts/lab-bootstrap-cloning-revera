@@ -74,11 +74,13 @@ body {
 .carousel-control-prev-icon {
     left: 0px;
     z-index: 110;
+    color: #f4473a;
 }
 
 .carousel-control-next-icon {
     right: 0px;
     z-index: 110;
+    color: #f4473a;
 }
 
 .carousel__overlay {
@@ -137,6 +139,20 @@ body {
     margin-bottom: 5rem;
 }
  */
+
+.cover__btn {
+    background: rgba(255,255,255,0.2);
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    width: 150px;
+    border: 1px solid #fff;
+    padding: 5px 0px;
+    margin: 10px auto;
+    font-weight: bold;
+    color: #fff!important;
+} 
+
 .container--red {
     background-color: #ed564b;
     color: white;
