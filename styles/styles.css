@@ -57,12 +57,13 @@ body {
     height: 100px;
     margin: -50px 0 0;
     display: block;
-    background: url(../img/bg_direction_nav.png) no-repeat 0 0;
     position: absolute;
     top: 50%;
     cursor: pointer;
     text-indent: -9999px;
     color: #f4473a;
+    opacity: 1;
+    z-index: 110;
 }
 
 .carousel {
@@ -71,16 +72,24 @@ body {
     margin: 0;
 }
 
-.carousel-control-prev-icon {
+.carousel-control-prev {
+    background: url(../img/bg_direction_nav_left.png) no-repeat 0 0;
     left: 0px;
-    z-index: 110;
-    color: #f4473a;
 }
 
-.carousel-control-next-icon {
-    right: 0px;
-    z-index: 110;
-    color: #f4473a;
+.carousel-control-prev:hover {
+    background: url(../img/bg_direction_nav_left_hover.png) no-repeat 0 0;
+    left: 0px;
+}
+
+.carousel-control-next {
+    background: url(../img/bg_direction_nav_right.png) no-repeat 0 0;
+    right: 0px;    
+}
+
+.carousel-control-next:hover {
+    background: url(../img/bg_direction_nav_right_hover.png) no-repeat 0 0;
+    right: 0px;    
 }
 
 .carousel__overlay {
@@ -90,6 +99,7 @@ body {
     height: 100%;
     left: 0px;
     top: 0px;
+    z-index: 100;
 }
 
 .carousel-inner {
@@ -105,53 +115,28 @@ body {
     text-align: center;
     z-index: 120;
     color: #fff;
+    opacity: 1;
 }
 
 .cover__text h2 {
     text-transform: uppercase;
     font-size: 36px;
     color: #fff;
+    opacity: 1;
 }
 
-/* .cover__title {
-    color: yellow;
-    width: 35%;
-    font-size: 2.25rem;
-    padding-top: 14.8rem;
-    line-height: 2.45rem;
-}
-
-.cover__subtitle {
-    color: yellow;
-    width: 33%;
-    font-size: 1rem;    
-    line-height: 1.5rem;
-    padding: 0.7rem;
-} */
-
-/* .cover__btn {
-    background-color: transparent;
+.cover__btn {
+    background-color: rgba(255, 255, 255, 0.514);;
     color: white;
     font-weight: bold;
     box-shadow: none;
     border: 1px solid white;
     padding: 0.6rem 2rem;
     margin-bottom: 5rem;
+    opacity: 1;
+    cursor: pointer;
+    
 }
- */
-
-.cover__btn {
-    background: rgba(255,255,255,0.2);
-    display: block;
-    text-transform: uppercase;
-    color: #fff;
-    width: 150px;
-    border: 1px solid #fff;
-    padding: 5px 0px;
-    margin: 10px auto;
-    font-weight: bold;
-    color: #fff!important;
-} 
 
 .container--red {
     background-color: #ed564b;
